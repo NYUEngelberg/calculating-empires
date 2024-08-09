@@ -1,0 +1,18 @@
+# misc
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# tiles
+gdal_intermediate_files
+tiles_directory_black_10
+tiles_directory_white_10
+tile-experiments
+
+tiles.tar.gz
+*.zip
+*.tar.gz
+
+

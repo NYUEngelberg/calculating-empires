@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      defer
+      data-domain="calculatingempires.net"
+      src="https://plausible.io/js/script.js"
+    ></script>
+    <title>Calculating Empires</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="styles/main.css" tupe="text/css" />
+    <link rel="stylesheet" href="styles/light-dark.css" type="text/css" />
+    <link rel="stylesheet" href="styles/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/ol/ol.css" type="text/css" />
+    <script src="./scripts/ol/ol.js"></script>
+    <script src="./scripts/ol/ol-layerswitcher.js"></script>
+    <link rel="stylesheet" href="./styles/ol/ol-layerswitcher.css" />
+    <meta
+      property="og:title"
+      content="Calculating Empires: A Genealogy of Technology and Power since 1500"
+    />
+    <meta
+      property="og:description"
+      content="Explore how technical and social structures co-evolved over five centuries in this large-scale research visualization."
+    />
+    <meta
+      property="og:image"
+      content="https://calculatingempires.net/content/calculating-empires-og.png"
+    />
+    <meta property="og:url" content="https://calculatingempires.net" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Calculating Empires: A Genealogy of Technology and Power since 1500"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore how technical and social structures co-evolved over five centuries in this large-scale research visualization."
+    />
+    <meta
+      name="twitter:image"
+      content="https://calculatingempires.net/content/calculating-empires-og.png"
+    />
+    <meta name="twitter:url" content="https://calculatingempires.net" />
+    <meta
+      name="description"
+      content="Calculating Empires is a large-scale research visualization exploring how technical and social structures co-evolved over five centuries. View the contemporary period in a longer trajectory of ideas, devices, infrastructures, and systems of power."
+    />
+    <meta
+      name="keywords"
+      content="Calculating Empires, large-scale research visualization, technical and social structures, history of empires, communication, computation, classification, control"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo-wrapper">
+        <a href="/">
+          <h1 id="logo-title">Calculating Empires</h1>
+        </a>
+        <h2>A Genealogy of Technology and Power Since 1500</h2>
+      </div>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="menu-icon" id="menu-icon">&#9776;</div>
+          <ul class="nav-links" id="nav-links">
+            <li class="nav-item">
+              <details id="audio-tours">
+                <summary>Audio Tour</summary>
+                <ul class="dropdown">
+                  <li>
+                    <span id="how-to-read-map"
+                      ><a href="/?audio=how-to-read-the-map"
+                        >How to read this map</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="nav-item">
+              <details>
+                <summary>Topics</summary>
+
+                <ul class="dropdown">
+                  <li class="menu-group">
+                    <details>
+                      <summary>Communication and Computation</summary>
+                      <ul class="submenu">
+                        <li>
+                          <a href="/?topic=communication-devices"
+                            >Communication devices</a
+                          >
+                        </li>
+                        <li><a href="/?topic=interfaces">Interfaces</a></li>
+                        <li>
+                          <a href="/?topic=communication-infrastructure"
+                            >Communication infrastructure</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/?topic=data-organization"
+                            >Data organization</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Algorithms">Algorithms</a></li>
+                        <li><a href="/?topic=Models">Models</a></li>
+                        <li>
+                          <a href="/?pos=67625.64%2C9468.73%2C15.5629"
+                            >Human computers</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Hardware">Hardware</a></li>
+                        <li>
+                          <a href="/?topic=Unconventional-computing"
+                            >Unconventional computing</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="menu-group">
+                    <details>
+                      <summary>Control and Classification</summary>
+                      <ul class="submenu">
+                        <li><a href="/?topic=time">Time</a></li>
+                        <li>
+                          <a href="/?topic=education"> Education </a>
+                        </li>
+                        <li>
+                          <a href="/?topic=Emotions-and-intelligence"
+                            >Emotions and intelligence</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/?topic=Human-bodies">Human bodies</a>
+                        </li>
+                        <li><a href="/?topic=Biometrics">Biometrics</a></li>
+                        <li><a href="/?topic=Medical">Medical</a></li>
+                        <li><a href="/?topic=Prison">Prison</a></li>
+                        <li><a href="/?topic=Policing">Policing</a></li>
+                        <li><a href="/?topic=Borders">Borders</a></li>
+                        <li><a href="/?topic=Bureaucracy">Bureaucracy</a></li>
+                        <li><a href="/?topic=Colonialism">Colonialism</a></li>
+                        <li>
+                          <a href="/?topic=Political-and-economic-systems"
+                            >Political and economic systems</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Production">Production</a></li>
+                        <li>
+                          <a href="/?topic=Energy-and-resources"
+                            >Energy and resources</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Lithosphere">Lithosphere</a></li>
+                        <li>
+                          <a href="/?topic=Atmosphere-and-hydrosphere"
+                            >Atmosphere and hydrosphere</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Biosphere">Biosphere</a></li>
+                        <li><a href="/?topic=Astrosphere">Astrosphere</a></li>
+                        <li>
+                          <a href="/?topic=Spatial-representation"
+                            >Spatial representation</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Architecture">Architecture</a></li>
+                        <li>
+                          <a href="/?topic=Surveillance-infrastructure"
+                            >Surveillance infrastructure</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/?topic=Military-doctrine"
+                            >Military doctrine</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/?topic=Military-systems"
+                            >Military systems</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item">
+              <a href="info.html" id="info-icon">
+                <img src="./content/info-icon-white.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <link rel="stylesheet" href="./styles/navbar.css" type="text/css" />
+      <script src="./scripts/navbar.js"></script>
+    </div>
+    <main>
+      <div class="container">
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="./content/about/about_Intro@2x.png" />
+          </div>
+        </div>
+        <h1 class="text-center">Calculating Empires</h1>
+        <h2 class="text-center">
+          A Genealogy of Technology and Power Since 1500
+        </h2>
+        <p class="credits text-center">
+          Kate Crawford and Vladan Joler<br />
+          (2023)
+        </p>
+        <p>
+          How can we understand the operations of technology and power in our
+          era? Our technological systems are increasingly complex,
+          interconnected, automated and opaque. Social institutions, from
+          schools to prisons, are becoming data industries, incorporating
+          pervasive forms of capture and analysis. Even places that were once
+          off-limits to capital, from our emotional expressions to outer space,
+          are now subject to computational control and extraction. Meanwhile,
+          the industrial transformations in AI are concentrating power into even
+          fewer hands, while accelerating polarization and alienation. If we are
+          to address the urgent challenges of the contemporary time - including
+          technocratic fascism, climate catastrophe, colonial wars, and wealth
+          inequality - we need to contend with the interwoven nature of their
+          histories. In order to have a future, we must first confront our past.
+        </p>
+        <p>
+          <em>Calculating Empires</em> is a large-scale research visualization
+          exploring how technical and social structures co-evolved over five
+          centuries. The aim is to view the contemporary period in a longer
+          trajectory of ideas, devices, infrastructures, and systems of power.
+          It traces technological patterns of colonialism, militarization,
+          automation, and enclosure since 1500 to show how these forces still
+          subjugate and how they might be unwound. By tracking these imperial
+          pathways, <em>Calculating Empires</em> offers a means of seeing our
+          technological present in a deeper historical context. And by
+          investigating how past empires have calculated, we can see how they
+          created the conditions of empire today.
+        </p>
+        <p>
+          <em>Calculating Empires</em> centers on four themes:
+          <em>communication</em>, <em>computation</em>,
+          <em>classification</em> and <em>control</em>. Across the centuries,
+          the work illustrates the shifts in communication devices,
+          infrastructures, and computational architectures, and how they are
+          entwined with the histories of social control and classification. The
+          vertical axis represents time, beginning with the 16th century at the
+          base. The horizontal axis features a collection of systems: from
+          algorithms to architecture, bodies to borders. Navigation is flexible:
+          you can follow a theme, a time period, or set of ideas.
+        </p>
+        <div class="image-grid single">
+          <div class="grid-item-1x1 start-3">
+            <img src="./content/about/about_01@2x.png" alt="" />
+          </div>
+        </div>
+        <p>
+          If we read from left to right, the work begins with the history of
+          communication devices and the interfaces needed to access them. Next
+          we see programming languages and the communication infrastructures
+          that operate in the background: from submarine telegraph cables, to
+          satellites, to the electromagnetic spectrum.
+        </p>
+        <p>
+          As we follow the data flows from those communications systems, they
+          are collected and organized by museums, film and TV archives, data
+          brokers, and AI training datasets. That data is then used to train
+          algorithms and models that have their own histories, shaped by the
+          labor of programmers and crowdworkers. It is all powered by
+          energy-intensive computational hardware that is expanding
+          exponentially in multiple directions, from hyperscale data centers, to
+          biological computing, to quantum.
+        </p>
+        <div class="image-grid">
+          <a class="grid-item-1x2" href="/?pos=83365.63%2C5219.00%2C14.9905">
+            <img
+              src="./content/about/about_02_a@2x.png"
+              alt="Shifting relationship to time"
+            />
+            <span class="img-title">Shifting relationship to time</span>
+          </a>
+          <a class="grid-item-2x2" href="/?pos=70865.76%2C14240.23%2C14.7448">
+            <img
+              src="./content/about/about_02_b@2x.png"
+              alt="Resource-heavy computing"
+            />
+            <span class="img-title">Resource-heavy computing</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=51791.75%2C15306.24%2C15.3164">
+            <img src="./content/about/about_02_c@2x.png" alt="Forecasting" />
+            <span class="img-title">Forecasting</span>
+          </a>
+          <a class="grid-item-1x2" href="/?pos=84962.18%2C15037.51%2C14.9204">
+            <img
+              src="./content/about/about_02_e@2x.png"
+              alt="Education industry"
+            />
+            <span class="img-title">Education industry</span>
+          </a>
+          <a
+            class="grid-item-1x1 start-4"
+            href="/?pos=85677.36%2C2654.29%2C15.9054"
+          >
+            <img
+              src="./content/about/about_02_d@2x.png"
+              alt="Saving souls with school"
+            />
+            <span class="img-title">Saving souls with school</span>
+          </a>
+        </div>
+        <p>
+          The work then moves to the themes of classification and control. It
+          begins with time as a concept that orders human actions and labor, and
+          then education as another social structuring process that shapes and
+          organizes social norms, values, and hierarchies. Next we turn to the
+          history of ideas about emotions and intelligence, as well as the
+          shaping of the human body itself.
+        </p>
+        <p>
+          We see practices of classification and control in biometrics and
+          medical data, in the disciplinary systems of prisons and policing, and
+          in the way borders and bureaucracy regulate the movements of people
+          and information.
+        </p>
+        <div class="image-grid">
+          <a class="grid-item-2x2" href="/?pos=92578.11%2C15005.65%2C14.7238">
+            <img src="./content/about/about_03_a@2x.png" alt="Drugs" />
+            <span class="img-title">Drugs</span>
+          </a>
+          <a class="grid-item-1x2" href="/?pos=96597.73%2C8577.61%2C14.9396">
+            <img
+              src="./content/about/about_03_b@2x.png"
+              alt="Eugenics and forced sterilization"
+            />
+            <span class="img-title">Eugenics and forced sterilization</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=112287.87%2C9845.49%2C15.9491">
+            <img src="./content/about/about_03_c@2x.png" alt="Borders" />
+            <span class="img-title">Borders</span>
+          </a>
+          <a class="grid-item-1x2" href="/?pos=106454.31%2C11648.28%2C15.0352">
+            <img
+              src="./content/about/about_03_e@2x.png"
+              alt="Layers of prison"
+            />
+            <span class="img-title">Layers of prison</span>
+          </a>
+          <a
+            class="grid-item-1x1 start-4"
+            href="/?pos=95183.68%2C7392.25%2C15.5819"
+          >
+            <img
+              src="./content/about/about_03_d@2x.png"
+              alt="Muscular christianity"
+            />
+            <span class="img-title">Muscular christianity</span>
+          </a>
+        </div>
+        <p>
+          This brings us to the heart of <em>Calculating Empires</em>:
+          colonialism and the paths of empires over history, with their
+          accompanying political and economic ideologies that inform industrial
+          production and energy extraction.
+        </p>
+        <p>
+          The final section of the work contends with the strata of planetary
+          classification: from the mineral layer of the lithosphere, all the way
+          up to the astrosphere. Then we consider the concept of space in other
+          ways, how mapping and architecture are themselves systems of control.
+          Finally, we see multiple layers of militarized power, from
+          surveillance technologies, to authoritarian doctrines, to entire
+          military systems.
+        </p>
+        <div class="image-grid">
+          <a class="grid-item-1x2" href="/?pos=115273.62%2C8445.57%2C14.7805">
+            <img
+              src="./content/about/about_04_a@2x.png"
+              alt="Weber's iron cage"
+            />
+            <span class="img-title">Weber's iron cage</span>
+          </a>
+          <a class="grid-item-2x2" href="/?pos=119769.66%2C2330.54%2C14.7891">
+            <img
+              src="./content/about/about_04_b@2x.png"
+              alt="European colonialism"
+            />
+            <span class="img-title">European colonialism</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=126847.30%2C15181.36%2C14.9948">
+            <img
+              src="./content/about/about_04_c@2x.png"
+              alt="Knowledge and data extraction"
+            />
+            <span class="img-title">Knowledge and data extraction</span>
+          </a>
+          <a class="grid-item-1x2" href="/?pos=152787.58%2C15342.70%2C15.1447">
+            <img
+              src="./content/about/about_04_e@2x.png"
+              alt="Military doctrine"
+            />
+            <span class="img-title">Military doctrine</span>
+          </a>
+          <a
+            class="grid-item-1x1 start-4"
+            href="/?pos=123022.85%2C15439.78%2C14.9948"
+          >
+            <img src="./content/about/about_04_d@2x.png" alt="Neoliberalism" />
+            <span class="img-title">Neoliberalism</span>
+          </a>
+        </div>
+        <p>
+          The contemporary tendency toward simplification and solutionism has
+          weakened the ability to handle dense information, while our technical
+          and environmental realities only become more complex and
+          interdependent. By visualizing these interlaced histories of empire in
+          intricate detail, we hope to better understand our current
+          predicament. In the words of French historian Fernand Braudel, “if one
+          wants to understand the world, one has to determine the hierarchy of
+          forces, currents, and individual movements, and then put them together
+          to form an overall constellation.”
+          <em>Calculating Empires</em> invites the visitor inside this
+          constellation.
+        </p>
+        <p>
+          <em>Calculating Empires</em> begins with a key moment when global
+          networks - both cultural and mercantile - began to take shape in the
+          1500s. New trade routes meant the expansion of European empire.
+          Advances in shipping and navigational instruments enabled the
+          annexation of lands and genocide of Indigenous populations while
+          introducing new viruses, drugs, and weapons. The Gutenberg press
+          reorganized information power and laid the groundwork for a political
+          and cultural transformation. New scientific instruments and
+          calculation systems were developed. The meticulous cataloging and
+          privatization of land, animals, plants, and space commenced a layered
+          agenda of colonization that continued to expand for centuries. These
+          practices of past empires are now echoed in the highly concentrated
+          technology and military industries of the 21st century.
+        </p>
+        <div class="image-grid">
+          <a class="grid-item-1x2" href="/?pos=119658.80%2C947.50%2C15.7458">
+            <img src="./content/about/about_05_a@2x.png" alt="Great dying" />
+            <span class="img-title">Great dying</span>
+          </a>
+          <a class="grid-item-2x2" href="/?pos=146415.08%2C4925.63%2C15.2458">
+            <img src="./content/about/about_05_b@2x.png" alt="Enclosure" />
+            <span class="img-title">Enclosure</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=143974.23%2C2170.52%2C15.5979">
+            <img
+              src="./content/about/about_05_c@2x.png"
+              alt="Mercator projection"
+            />
+            <span class="img-title">Mercator projection</span>
+          </a>
+          <a class="grid-item-1x2" href="/?pos=135619.82%2C14073.12%2C14.7415">
+            <img
+              src="./content/about/about_05_e@2x.png"
+              alt="Genetic engineering and terraforming"
+            />
+            <span class="img-title">Genetic engineering and terraforming</span>
+          </a>
+          <a
+            class="grid-item-1x1 start-4"
+            href="/?pos=51420.97%2C3163.36%2C15.5591"
+          >
+            <img
+              src="./content/about/about_05_d@2x.png"
+              alt="Cartesian geometry"
+            />
+            <span class="img-title">Cartesian geometry</span>
+          </a>
+        </div>
+        <p>
+          Every reading of this work is different, and you're invited to draw
+          your own connections. Hundreds of individual drawings and texts span
+          centuries of conflict, enclosure, and control. We suggest taking your
+          time and reading slowly - a radical act in an era of speed and
+          simplification. A close examination of these patterns over several
+          centuries reveals the ascendance of particular ideas and technologies,
+          the concentration of power and wealth, and the colonization of land,
+          infrastructure, and human lifeworlds.
+        </p>
+        <p>
+          The history of science and technology is also a story of
+          visualizations. From the Venn diagram to the neural network, visual
+          illustrations have shaped the conceptual horizons of the scientific
+          imaginary. We use the same method to show how technology is political,
+          not separate from it. Even diagrammatic representations - from the
+          Gannt chart to the logic gate - are forms of organizing information
+          which embed a political structure.
+        </p>
+        <div class="image-grid">
+          <a class="grid-item-1x1" href="/?pos=51420.97%2C3163.36%2C15.5591">
+            <img src="./content/about/about_06_a@2x.png" alt="Cartesian map" />
+            <span class="img-title">Cartesian map</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=142684.11%2C7469.33%2C15.9708">
+            <img src="./content/about/about_06_b@2x.png" alt="Venn diagram" />
+            <span class="img-title">Venn diagram</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=57669.90%2C4839.37%2C15.0191">
+            <img
+              src="./content/about/about_06_c@2x.png"
+              alt="Network diagram"
+            />
+            <span class="img-title">Network diagram</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=142261.23%2C8960.39%2C15.8958">
+            <img src="./content/about/about_06_d@2x.png" alt="Flow chart" />
+            <span class="img-title">Flow chart</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=142304.72%2C5586.35%2C15.7691">
+            <img src="./content/about/about_06_e@2x.png" alt="Bar chart" />
+            <span class="img-title">Bar chart</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=142819.58%2C4738.47%2C16.5958">
+            <img src="./content/about/about_06_f@2x.png" alt="Timeline" />
+            <span class="img-title">Timeline</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=142684.11%2C7469.33%2C15.9708">
+            <img
+              src="./content/about/about_06_g@2x.png"
+              alt="Organization chart"
+            />
+            <span class="img-title">Organization chart</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=142684.11%2C7469.33%2C15.9708">
+            <img src="./content/about/about_06_h@2x.png" alt="Gannt chart" />
+            <span class="img-title">Gannt chart</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=58763.84%2C9312.55%2C15.7225">
+            <img src="./content/about/about_06_i@2x.png" alt="Logic gate" />
+            <span class="img-title">Logic gate</span>
+          </a>
+          <a class="grid-item-1x1" href="/?pos=61132.89%2C11374.91%2C16.7525">
+            <img src="./content/about/about_06_j@2x.png" alt="Perceptron" />
+            <span class="img-title">Perceptron</span>
+          </a>
+        </div>
+        <p>
+          <em>Calculating Empires</em> takes Donna Haraway's provocation
+          literally that we need to map the “informatics of domination.” The
+          technologies of today are the latest manifestations of a long line of
+          entangled systems of knowledge and control. This is the purpose of our
+          visual genealogy: to show the complex interplay of systems of power,
+          information, and circumstance across terrain and time, in order to
+          imagine how things could be otherwise.
+        </p>
+        <p>
+          This work can never be complete: it is necessarily partial,
+          subjective, and drawn from our own positionality. But that openness is
+          part of the project. You are invited to read, reflect, and consider
+          your own history in the recurring stories of calculation and empire.
+          As the overwhelming now continues to unfold,
+          <em>Calculating Empires</em> offers the possibility of looking back,
+          in order to consider how different futures could be envisioned and
+          realized.
+        </p>
+      </div>
+    </main>
+    <div id="footer" style="justify-content: flex-end">
+      <div class="footer-credits">Kate Crawford and Vladan Joler (2023)</div>
+    </div>
+    <!-- <script type="text/javascript" src="./scripts/light-dark.js"></script> -->
+    <script type="text/javascript">
+      document.documentElement.setAttribute("data-theme", "light");
+      document
+        .getElementById("info-icon")
+        .getElementsByTagName("img")[0].src = `./content/info-icon-black.svg`;
+    </script>
+  </body>
+</html>

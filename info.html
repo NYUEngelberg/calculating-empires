@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      defer
+      data-domain="calculatingempires.net"
+      src="https://plausible.io/js/script.js"
+    ></script>
+    <title>Calculating Empires</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="styles/main.css" tupe="text/css" />
+    <link rel="stylesheet" href="styles/light-dark.css" type="text/css" />
+    <link rel="stylesheet" href="styles/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/ol/ol.css" type="text/css" />
+    <script src="./scripts/ol/ol.js"></script>
+    <script src="./scripts/ol/ol-layerswitcher.js"></script>
+    <link rel="stylesheet" href="./styles/ol/ol-layerswitcher.css" />
+    <meta
+      property="og:title"
+      content="Calculating Empires: A Genealogy of Technology and Power since 1500"
+    />
+    <meta
+      property="og:description"
+      content="Explore how technical and social structures co-evolved over five centuries in this large-scale research visualization."
+    />
+    <meta
+      property="og:image"
+      content="https://calculatingempires.net/content/calculating-empires-og.png"
+    />
+    <meta property="og:url" content="https://calculatingempires.net" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Calculating Empires: A Genealogy of Technology and Power since 1500"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore how technical and social structures co-evolved over five centuries in this large-scale research visualization."
+    />
+    <meta
+      name="twitter:image"
+      content="https://calculatingempires.net/content/calculating-empires-og.png"
+    />
+    <meta name="twitter:url" content="https://calculatingempires.net" />
+    <meta
+      name="description"
+      content="Calculating Empires is a large-scale research visualization exploring how technical and social structures co-evolved over five centuries. View the contemporary period in a longer trajectory of ideas, devices, infrastructures, and systems of power."
+    />
+    <meta
+      name="keywords"
+      content="Calculating Empires, large-scale research visualization, technical and social structures, history of empires, communication, computation, classification, control"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo-wrapper">
+        <a href="/">
+          <h1 id="logo-title">Calculating Empires</h1>
+        </a>
+        <h2>A Genealogy of Technology and Power Since 1500</h2>
+      </div>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="menu-icon" id="menu-icon">&#9776;</div>
+          <ul class="nav-links" id="nav-links">
+            <li class="nav-item">
+              <details id="audio-tours">
+                <summary>Audio Tour</summary>
+                <ul class="dropdown">
+                  <li>
+                    <span id="how-to-read-map"
+                      ><a href="/?audio=how-to-read-the-map"
+                        >How to read this map</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="nav-item">
+              <details>
+                <summary>Topics</summary>
+
+                <ul class="dropdown">
+                  <li class="menu-group">
+                    <details>
+                      <summary>Communication and Computation</summary>
+                      <ul class="submenu">
+                        <li>
+                          <a href="/?topic=communication-devices"
+                            >Communication devices</a
+                          >
+                        </li>
+                        <li><a href="/?topic=interfaces">Interfaces</a></li>
+                        <li>
+                          <a href="/?topic=communication-infrastructure"
+                            >Communication infrastructure</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/?topic=data-organization"
+                            >Data organization</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Algorithms">Algorithms</a></li>
+                        <li><a href="/?topic=Models">Models</a></li>
+                        <li>
+                          <a href="/?pos=67625.64%2C9468.73%2C15.5629"
+                            >Human computers</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Hardware">Hardware</a></li>
+                        <li>
+                          <a href="/?topic=Unconventional-computing"
+                            >Unconventional computing</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="menu-group">
+                    <details>
+                      <summary>Control and Classification</summary>
+                      <ul class="submenu">
+                        <li><a href="/?topic=time">Time</a></li>
+                        <li>
+                          <a href="/?topic=education"> Education </a>
+                        </li>
+                        <li>
+                          <a href="/?topic=Emotions-and-intelligence"
+                            >Emotions and intelligence</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/?topic=Human-bodies">Human bodies</a>
+                        </li>
+                        <li><a href="/?topic=Biometrics">Biometrics</a></li>
+                        <li><a href="/?topic=Medical">Medical</a></li>
+                        <li><a href="/?topic=Prison">Prison</a></li>
+                        <li><a href="/?topic=Policing">Policing</a></li>
+                        <li><a href="/?topic=Borders">Borders</a></li>
+                        <li><a href="/?topic=Bureaucracy">Bureaucracy</a></li>
+                        <li><a href="/?topic=Colonialism">Colonialism</a></li>
+                        <li>
+                          <a href="/?topic=Political-and-economic-systems"
+                            >Political and economic systems</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Production">Production</a></li>
+                        <li>
+                          <a href="/?topic=Energy-and-resources"
+                            >Energy and resources</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Lithosphere">Lithosphere</a></li>
+                        <li>
+                          <a href="/?topic=Atmosphere-and-hydrosphere"
+                            >Atmosphere and hydrosphere</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Biosphere">Biosphere</a></li>
+                        <li><a href="/?topic=Astrosphere">Astrosphere</a></li>
+                        <li>
+                          <a href="/?topic=Spatial-representation"
+                            >Spatial representation</a
+                          >
+                        </li>
+                        <li><a href="/?topic=Architecture">Architecture</a></li>
+                        <li>
+                          <a href="/?topic=Surveillance-infrastructure"
+                            >Surveillance infrastructure</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/?topic=Military-doctrine"
+                            >Military doctrine</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/?topic=Military-systems"
+                            >Military systems</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item">
+              <a href="info.html" id="info-icon">
+                <img src="./content/info-icon-white.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <link rel="stylesheet" href="./styles/navbar.css" type="text/css" />
+      <script src="./scripts/navbar.js"></script>
+    </div>
+    <main>
+      <div class="container">
+        <h1>Calculating Empires</h1>
+        <h2>A Genealogy of Technology and Power Since 1500</h2>
+        <p class="line-bottom">
+          Calculating Empires is a large-scale research visualization and
+          physical installation exploring how technical and social structures
+          co-evolved over five centuries. It traces technological patterns of
+          colonialism, militarization, automation, and enclosure since 1500 to
+          show how these forces still subjugate and how they might be unwound.
+        </p>
+        <h4>Credits</h4>
+        <p class="line-bottom">
+          Calculating Empires: A Genealogy of Technology and Power Since 1500
+          <br />
+          By Kate Crawford and Vladan Joler (2023)
+        </p>
+        <h4>Acknowledgments</h4>
+        <p class="line-bottom">
+          Sarah Ciston - Research and design associate<br />
+          Francis Corry, Annie Dorsen, Edward Kang, Will Orr, and Hamsini
+          Sridharan - Research advisors<br />
+          Hannah Franklin and Michael Weinberg - Project management<br />
+          Olivia Solis Villaverde and Milutin Marinovic - Website production<br /><br />
+          With thanks to Prof. Mike Ananny, Dr. Pradnya Bivalkar, Chiara Costa,
+          Elliott Crawford, Prof. Dubravko Culibrk, Melodi Dincer, Prof. Bernard
+          Geoghegan, Prof. Mario Hibert, Jake Karr, Prof. Djordje Krivokapic,
+          Dr. Sasha Luccioni, Dr. Ida Momennejad, Prof. John Modern, Trevor
+          Paglen, Laura Poitras, Gordan Savičić, Prof. Justin E. H. Smith, Prof.
+          Felix Stalder, Jer Thorp, and Prof. Fred Turner. We'd also like to
+          acknowledge everyone in the Knowing Machines Project, the Share
+          Foundation, the fellows of the Robert Bosch Academy, Australian
+          National University School of Cybernetics, and the Perast Monastery
+          retreat.
+        </p>
+        <h4>Contact</h4>
+        <p class="line-bottom">info.at.calculatingempires.net</p>
+        <h4>Supported by</h4>
+        <p class="line-bottom">
+          The Sloan Foundation, as part of the Knowing Machines Project
+          <a href="https://knowingmachines.org"
+            >(https://knowingmachines.org)</a
+          >
+          <br />
+          The Robert Bosch Academy
+          <a href="https://www.robertboschacademy.de/"
+            >(https://www.robertboschacademy.de/)</a
+          ><br />
+          Fondazione Prada
+          <a href="https://www.fondazioneprada.org/project/calculating-empires/"
+            >(https://www.fondazioneprada.org/project/calculating-empires/)</a
+          >
+        </p>
+        <h4>Awards</h4>
+        <p class="line-bottom">
+          <em>Calculating Empires</em> has won the European Commission's 2024
+          <a
+            href="https://ars.electronica.art/starts-prize/en/calculating-empires/"
+            target="_blank"
+            >Grand Prize for Artistic Exploration in Science, Technology, and
+            the Arts</a
+          >. The jury noted that "Calculating Empires challenges us to redefine
+          our relationship with current socio-technical structures. By asking
+          how we got where we are today, we can (re)consider where we might be
+          going." Previous winners include Richard Mosse, Holly Herndon and Matt
+          Dryhurst,.
+        </p>
+        <h4>Upcoming Exhibitions</h4>
+        <ul class="line-bottom">
+          <li>Ars Electronica Festival - Linz, Austria (September 2024)</li>
+          <li>Rijksmusuem Twenthe - Enschede, Netherlands (September 2024)</li>
+          <li>Design Museum of Barcelona - Barcelona, Spain (December 2024)</li>
+          <li>LABoral - Gijón, Spain (January 2025)</li>
+          <li>Jeu de Paume - Paris, France (April 2025)</li>
+        </ul>
+        <h4>Previous Exhibitions</h4>
+        <ul class="line-bottom">
+          <li>
+            Premiered at Fondazione Prada - Milan, Italy (November 2023 -
+            February 2024)
+          </li>
+          <li>
+            KW Institute in Berlin, as part of the Poetics of Encryption
+            exhibition (February 2024 - May 2024)
+          </li>
+        </ul>
+        <h4>Technical specification</h4>
+        <p>
+          Calculating Empires is an immersive physical installation that can be
+          staged in different formats. The minimum size of the work is 24 meters
+          in length, and 3 meters in height. It can be staged as a circular
+          work, or as two wall murals facing each other. It can also be
+          installed as a large-scale floor work.
+        </p>
+        <p class="line-bottom">
+          We include two large format handmade books to be shown alongside the
+          work. One is for the themes of Communication and Computation, the
+          other is for Control and Classification. They are printed on
+          semi-transparent paper, so the timelines overlap, and they allow
+          visitors to read the details up close. We stage the books with
+          pencils, to invite audience members to make their own annotations and
+          notes in the books, which we collect at the end of the exhibition as
+          an open form of feedback.
+        </p>
+        <h4>Biographies</h4>
+        <p>
+          Prof. <strong>Kate Crawford</strong> is a leading scholar of the
+          impacts of artificial intelligence. She is a research professor at USC
+          Annenberg in Los Angeles, a senior principal researcher at MSR New
+          York, and was the inaugural chair of AI and Justice at the Ecole
+          Normale Superieure in Paris. Her book <em>Atlas of AI</em> won
+          multiple awards, was named a book of the year by <em>Science</em> and
+          the <em>Financial Times</em>, and is translated into 12 languages. She
+          leads the Knowing Machines Project, an international research
+          collaboration studying the foundations of AI. Her artworks and
+          visualizations have been widely exhibited, are in the permanent
+          collections of MoMA, the V&A Museum, Ars Electronica, and the Design
+          Museum, and have been recognized with the Aryton Prize. Kate was named
+          by Time Magazine’s TIME100 as one of the most influential people in
+          AI.
+        </p>
+        <p class="line-bottom">
+          Prof. <strong>Vladan Joler</strong> is an academic, researcher, and
+          artist whose work blends data investigations, critical cartography,
+          investigative journalism, and data visualization. He is SHARE
+          Foundation co-founder and professor at the New Media Department of the
+          University of Novi Sad. Vladan Joler's work is in the permanent
+          collections of the Museum of Modern Art (MoMA), the V&A Museum, and
+          the Design Museum in London, and also in the permanent exhibition of
+          the Ars Electronica Center. His work has been exhibited in more than a
+          hundred international exhibitions worldwide.
+        </p>
+        <h4>Installation views</h4>
+        <div class="image-wrapper">
+          <a class="image-holder" href="#lightboxImage">
+            <img
+              src="content/info/info_1.png"
+              alt="Fondazione Prada - Milan | Black version of the map"
+            />
+          </a>
+
+          <p>
+            Exhibition view of “Calculating Empires” <br />
+            Osservatorio Fondazione Prada, Milan <br />
+            Photo: Piercarlo Quecchia - DSL Studio / @piercarloquecchia -
+            @dsl__studio <br />
+            Courtesy: Fondazione Prada
+          </p>
+        </div>
+        <div class="image-wrapper">
+          <a class="image-holder" href="#lightboxImage">
+            <img
+              src="content/info/info_2.png"
+              alt="Fondazione Prada - Milan | Objects supporting the exhibition"
+            />
+          </a>
+          <p>
+            Exhibition view of “Calculating Empires” <br />
+            Osservatorio Fondazione Prada, Milan <br />
+            Photo: Piercarlo Quecchia - DSL Studio / @piercarloquecchia -
+            @dsl__studio <br />
+            Courtesy: Fondazione Prada
+          </p>
+        </div>
+        <div class="image-wrapper">
+          <a class="image-holder" href="#lightboxImage">
+            <img
+              src="content/info/info_3.png"
+              alt="Fondazione Prada - Milan | Books"
+            />
+          </a>
+          <p>
+            Exhibition view of “Calculating Empires” <br />
+            Osservatorio Fondazione Prada, Milan <br />
+            Photo: Piercarlo Quecchia - DSL Studio / @piercarloquecchia -
+            @dsl__studio <br />
+            Courtesy: Fondazione Prada
+          </p>
+        </div>
+        <div class="image-wrapper">
+          <a class="image-holder" href="#lightboxImage">
+            <img
+              src="content/info/info_4.png"
+              alt="Fondazione Prada - Milan | Kate and Vladan"
+            />
+          </a>
+          <p>
+            Exhibition view of “Calculating Empires” <br />
+            Osservatorio Fondazione Prada, Milan <br />
+            Photo: Patrick Toomey Neir <br />
+            Courtesy: Fondazione Prada
+          </p>
+        </div>
+        <div class="image-wrapper">
+          <a class="image-holder" href="#lightboxImage">
+            <img
+              src="content/info/info_5.png"
+              alt="KW Institute - Berlin, Germany | Communication and Computation"
+            />
+          </a>
+          <p>
+            Exhibition view of “Poetics of Encryption” Installation “Calculating
+            Empires” <br />
+            KW Institute for Contemporary Art, Berlin <br />
+            Courtesy: KW Institute for Contemporary Art
+          </p>
+        </div>
+        <div class="image-wrapper">
+          <a class="image-holder" href="#lightboxImage">
+            <img
+              src="content/info/info_6.png"
+              alt="KW Institute - Berlin, Germany | Control and Classification"
+            />
+          </a>
+          <p>
+            Exhibition view of “Poetics of Encryption” Installation “Calculating
+            Empires” <br />
+            KW Institute for Contemporary Art, Berlin <br />
+            Courtesy: KW Institute for Contemporary Art
+          </p>
+        </div>
+        <a href="#" class="lightbox" id="lightboxImage"> </a>
+      </div>
+    </main>
+    <div id="footer" style="justify-content: flex-end">
+      <div class="footer-credits">Kate Crawford and Vladan Joler (2023)</div>
+    </div>
+    <script type="text/javascript">
+      document.documentElement.setAttribute("data-theme", "light");
+      document
+        .getElementById("info-icon")
+        .getElementsByTagName("img")[0].src = `./content/info-icon-black.svg`;
+
+      const images = document.querySelectorAll(".image-holder");
+      images.forEach((image) => image.addEventListener("click", openLightBox));
+      function openLightBox(e) {
+        const lightbox = document.getElementById("lightboxImage");
+        lightbox.innerHTML = "";
+        let imageName = event.target.src.split("/").pop();
+        const hiResImg = document.createElement("img");
+        hiResImg.src = `content/info/${imageName.split(".")[0]}_hi_res.png`;
+        lightbox.appendChild(hiResImg);
+      }
+    </script>
+    <!-- <script type="text/javascript" src="./scripts/light-dark.js"></script> -->
+  </body>
+</html>

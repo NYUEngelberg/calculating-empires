@@ -1,0 +1,20 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --border-color: rgba(255,255,255,0.6);
+  --header-height: 50px;
+  --header-height-outer: 51px; /* border */
+}
+
+[data-theme="light"] {
+  --background-color: white;
+  --text-color: black;
+  --border-color: rgba(0,0,0,0.4);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 65px;
+    --header-height-outer: 66px; /* border */
+  }
+}
